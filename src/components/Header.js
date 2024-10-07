@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import FlagsSelect from 'react-flags-select';
 
@@ -6,11 +6,11 @@ const Header = () => {
   const { t, i18n } = useTranslation();
   const [selectedCountry, setSelectedCountry] = useState("US");
 
-  // Map country codes to language codes
-  const countryToLanguageMap = {
+  // Memoize the country-to-language map to prevent it from changing on every render
+  const countryToLanguageMap = useMemo(() => ({
     US: 'en',
     DE: 'de'
-  };
+  }), []);
 
   useEffect(() => {
     // Set the initial country based on the current language
@@ -19,7 +19,7 @@ const Header = () => {
       (key) => countryToLanguageMap[key] === currentLanguage
     );
     setSelectedCountry(initialCountry || 'US');
-  }, [countryToLanguageMap]);
+  }, [i18n.language, countryToLanguageMap]);
 
   const handleLanguageChange = (countryCode) => {
     const languageCode = countryToLanguageMap[countryCode];

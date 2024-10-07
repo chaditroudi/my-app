@@ -16,7 +16,6 @@ export default function Sidebar({ setIsOpen }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [rightSidebarVisible, setRightSidebarVisible] = useState(false);
   const [activePage, setActivePage] = useState('');
-  const [addInstanceVisible, setAddInstanceVisible] = useState(false); 
   const { t } = useTranslation();
 
   
@@ -29,7 +28,6 @@ export default function Sidebar({ setIsOpen }) {
   const handleInstanceClick = () => {
     setActivePage('instances');
     setRightSidebarVisible(true);
-    setAddInstanceVisible(false); 
   };
 
 
@@ -49,7 +47,6 @@ export default function Sidebar({ setIsOpen }) {
   const closeSidebar = () => {
     setRightSidebarVisible(false);
     setActivePage('');
-    setAddInstanceVisible(false);
   };
   const menuItems = [
     { icon: <IoHomeOutline size={30} />, label: t('sidebar.home') }, 
@@ -136,7 +133,7 @@ export default function Sidebar({ setIsOpen }) {
 
       <RightSidebar visible={rightSidebarVisible} close={closeSidebar} />
 
-       { addInstanceVisible || rightSidebarVisible && activePage === 'instances' && (
+       {   rightSidebarVisible && activePage === 'instances' && (
         <div className="fixed inset-0 z-40 filter backdrop-blur-xl" />
       )}
     </div>

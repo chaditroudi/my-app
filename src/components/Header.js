@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FiGlobe } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import FlagsSelect from 'react-flags-select';
 

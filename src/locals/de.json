@@ -1,0 +1,50 @@
+{
+  "addInstance": {
+    "title": "Neue Instanz hinzufügen",
+    "generalInfo": "Allgemeine Instanzinformationen",
+    "instanceName": "Instanzname",
+    "connectionSettings": "Verbindungseinstellungen",
+    "shopURL": "Shop-URL",
+    "clientID": "Client-ID",
+    "clientSecret": "Client-Secret",
+    "testConnection": "Verbindung testen"
+  },
+  "header": {
+    "title": "Instanzen",
+    "selectLanguage": "Sprache auswählen"
+  },
+  "instances": {
+    "popularShopSystems": "Beliebte Shopsysteme",
+    "myInstances": "Meine Instanzen",
+    "shopware5": "Shopware 5",
+    "shopware6": "Shopware 6",
+    "eCommerce": "E-Commerce",
+    "testShopwareFiveInstance": "Test Shopware-Five Instanz",
+    "stageShopwareSixInstance": "Stage Shopware-Six Instanz",
+    "synchronized": "Synchronisiert",
+    "synchronizing": "Synchronisiere"
+  },
+  "shopwareVersion": "Shopware {{version}}",
+  "creatorName": "Steve vom Wege",
+  "creatorRole": "Kundenservice",
+  "createdAt": "Erstellt am: {{date}}",
+  "catalogs": "Kataloge {{count}}",
+  "status": {
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "pending": "Ausstehend"
+  },
+  "search":"suchen",
+
+
+  "sidebar":
+  {
+    "home": "Startseite",
+    "instances": "Instanzen",
+    "dashboard": "Dashboard",
+    "settings": "Einstellungen",
+    "logs": "Protokolle",
+    "report": "Bericht"
+  }
+  
+}

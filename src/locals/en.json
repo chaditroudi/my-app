@@ -1,0 +1,50 @@
+{
+  "addInstance": {
+    "title": "Add New Instance",
+    "generalInfo": "General Instance Information",
+    "instanceName": "Instance Name",
+    "connectionSettings": "Connection Settings",
+    "shopURL": "Shop URL",
+    "clientID": "Client ID",
+    "clientSecret": "Client Secret",
+    "testConnection": "Test Connection"
+  },
+  "header": {
+    "title": "Instances",
+    "selectLanguage": "Select Language"
+  },
+  "instances": {
+    "popularShopSystems": "Popular Shop Systems",
+    "myInstances": "My Instances",
+    "shopware5": "Shopware 5",
+    "shopware6": "Shopware 6",
+    "eCommerce": "ECommerce",
+    "testShopwareFiveInstance": "Test Shopware Five Instance",
+    "stageShopwareSixInstance": "Stage Shopware Six Instance",
+    "synchronized": "Synchronized",
+    "synchronizing": "Synchronizing"
+  },
+  "shopwareVersion": "Shopware {{version}}",
+  "creatorName": "Steve von Wege",
+  "creatorRole": "Customer Service",
+  "createdAt": "Created on: {{date}}",
+  "catalogs": "Catalogs {{count}}",
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending"
+  },
+  "search":"search",
+
+
+  "sidebar":
+  {
+    "home": "Home",
+    "instances": "Instances",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "logs": "Logs",
+    "report": "Report"
+  }
+  
+}

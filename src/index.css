@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backdrop-blur {
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+
+/* Example CSS */
+h-full {
+  height: 100%;
+}
+
+z-10 {
+  z-index: 10; /* Adjust as necessary */
+}
+

@@ -19,7 +19,7 @@ const Header = () => {
       (key) => countryToLanguageMap[key] === currentLanguage
     );
     setSelectedCountry(initialCountry || 'US');
-  }, [i18n.language]);
+  }, [countryToLanguageMap]);
 
   const handleLanguageChange = (countryCode) => {
     const languageCode = countryToLanguageMap[countryCode];

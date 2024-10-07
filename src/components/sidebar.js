@@ -32,10 +32,6 @@ export default function Sidebar({ setIsOpen }) {
     setAddInstanceVisible(false); 
   };
 
-  const handleAddInstanceClick = () => {
-    setAddInstanceVisible(true); 
-    setRightSidebarVisible(false); 
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -140,7 +136,7 @@ export default function Sidebar({ setIsOpen }) {
 
       <RightSidebar visible={rightSidebarVisible} close={closeSidebar} />
 
-      {rightSidebarVisible && activePage === 'instances' && (
+       { addInstanceVisible || rightSidebarVisible && activePage === 'instances' && (
         <div className="fixed inset-0 z-40 filter backdrop-blur-xl" />
       )}
     </div>
